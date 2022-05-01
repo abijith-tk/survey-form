@@ -1,7 +1,8 @@
-<!doctyoe html>
+<!<!DOCTYPE HTML>
 <html>
 <head><title>survey page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="form.css" rel="stylesheet">
 </head>
 <body>
 <h1 id="title">freeCodeCamp survey page</h1>
@@ -9,23 +10,49 @@
     <p id="description">Thank you for taking time to improve us. </p>
 <fieldset id="form">
     
-<form>
+<form id="survey-form">
 <label for="name">Name:</label><br>
-<input type="text" id="name"><br>
+<input type="text" id="name-label" placeholder="Enter your name"><br><br>
 <label for="email">E-mail</label><br>
-<input type="email" id="email"><br>
-<label for="age">Age(optional)</label>
-<input type="number" id="age">
-<label for="role">Which option currently describes your current role</label>
-<select id="role">
+<input type="email" id="email-label" placeholder="Enter your E-mail"><br><br>
+<label for="age">Age(optional)</label><br>
+<input type="number" id="number-label" min="1" max="100" placeholder="Enter your age" pattern="{1,100}" title="Please enter your age in numbers"><br><br>
+<label for="dropdown">Which option currently describes your current role</label><br>
+<select id="dropdown">
     <option selected="" hidden="">Select your role</option>
     <option value="student">Student</option>
     <option value="Job">Full Time Job</option>
     <option value="learner">Full Time learner</option>
     <option value="Prefer not to say">Prefer not to say </option>
     <option value="other">Others</option>
+</select><br><br>
+<label for="recommend">Would you recommend freeCodeCamp to a friend</label><br>
+<input type="radio" name="rec" value="definitely">Definitely<br>
+<input type="radio" name="rec" value="maybe">Maybe<br>
+<input type="radio" name="rec" value="not sure">Not sure<br><br>
+<label for="like">What do you like more about freeCodeCamp</label><br>
+<select name="dropdown2">
+    <option selected="" hidden="">Select an option</option>
+    <option value="challenges">Challenges</option>
+    <option value="projects">Projects</option>
+    <option value="community">Community</option>
+    <option value="open source">Open Source</option>
 </select>
-
+<br><br>
+<label for"check">What Would you like to see improved(check all that apply)</label><br>
+<input type="checkbox" value="front end projects">Front-end projects<br>
+<input type="checkbox" value="back end projects">Back-end projects<br>
+<input type="checkbox" value="challenges">challenges<br>
+<input type="checkbox" value="open source community">Open source community<br>
+<input type="checkbox" value="gitter help rooms">Gitter help rooms<br>
+<input type="checkbox" value="videos">Videos<br>
+<input type="checkbox" value="city meetups">City meetups<br>
+<input type="checkbox" value="wiki">Wiki<br>
+<input type="checkbox" value="forms">Forms<br>
+<input type="checkbox" value="additional courses">Additional courses<br><br>
+<label for="textarea">Any comments or suggestions</label>
+<textarea rows="4" placeholder="Enter your comments here"></textarea><br><br>
+<input type="submit" id="submit" value="submit">
 </form>
 </fieldset>
 </body>

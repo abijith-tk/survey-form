@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 18px;
+    margin-top: 10px;
+}
+fieldset{
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#submit{
+    height: 20px;
+    width: 80%;
+    background-color: green;
+    border-color: blue;
+    align-content: center;
+    margin-left: 24px;
+}
+#name-label,#email-label,#number-label{
+    border-color: blue;
+    width: 90%;
+    height: 20px;
+}
+textarea{
+    width:90%;
+    border-color: blue;
+}
+select{
+    width: 90%;
+    border-color: blue;
+}
+input{
+    border-color: blue;
+}
