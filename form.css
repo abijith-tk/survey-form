@@ -3,7 +3,6 @@ body{
     color: white;
     text-align: center;
     padding-left: 18px;
-    margin-top: 10px;
 }
 fieldset{
     background-color: grey;
@@ -15,11 +14,10 @@ fieldset{
 }
 #submit{
     height: 20px;
-    width: 80%;
+    width: 90%;
     background-color: green;
     border-color: blue;
     align-content: center;
-    margin-left: 24px;
 }
 #name-label,#email-label,#number-label{
     border-color: blue;
@@ -33,4 +31,8 @@ textarea{
 select{
     width: 90%;
     border-color: blue;
+}
+#title{
+    color: #f0f0f0;
+    text-shadow: red 1px 1px;
 }
