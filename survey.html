@@ -4,8 +4,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<h1 id="title">freeCodeCamp survey page</h1>
+    <br><br>
+    <p id="description">Thank you for taking time to improve us. </p>
+<fieldset id="form">
+    
 <form>
-
+<label for="name">Name:</label><br>
+<input type="text" id="name"><br>
+<label for="email">E-mail</label><br>
+<input type="email" id="email"><br>
+<label for="age">Age(optional)</label>
+<input type="number" id="age">
+<label for="role">Which option currently describes your current role</label>
+<select id="role">
+    <option selected="" hidden="">Select your role</option>
+    <option value="student">Student</option>
+    <option value="Job">Full Time Job</option>
+    <option value="learner">Full Time learner</option>
+    <option value="Prefer not to say">Prefer not to say </option>
+    <option value="other">Others</option>
+</select>
 </form>
+</fieldset>
 </body>
 </html>
